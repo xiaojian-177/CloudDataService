@@ -1,6 +1,6 @@
 <?php
 // 连接数据库
-$conn = new mysqli("localhost", "api", "api", "data");
+$conn = new mysqli("localhost", "your_username", "your_passowrd", "your_database");
 if ($conn->connect_error) {
     die("连接失败: " . $conn->connect_error);
 }
