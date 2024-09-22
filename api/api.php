@@ -13,6 +13,7 @@ $token = $_GET['token'];
 // 根据请求方法执行操作
 if (!isset($_GET['token'])) {
     echo json_encode(['status' => '403', 'message' => 'Access Denied']);
+    exit();
 }
 switch ($method) {
     case 'add':
